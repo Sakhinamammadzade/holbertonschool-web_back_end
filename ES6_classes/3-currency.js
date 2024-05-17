@@ -1,3 +1,4 @@
+/* eslint disable */
 export default class Currency{
     constructor(code, name){
         if (typeof(code) !== 'string'){
@@ -24,6 +25,6 @@ export default class Currency{
         this._name = name;
     }
      displayFullCurrency() {
-        return this._code + this._name
+        return `${this._name} (${this._code})`;
     }
 }
